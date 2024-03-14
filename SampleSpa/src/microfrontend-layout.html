@@ -1,0 +1,19 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <div class="base">
+    <div style="display: flex; flex-direction: column;">
+      <application name="@react-app/react-header" props="myProp"></application>
+      <application name="@react-app/react-footer"></application>
+    </div>
+
+    <main>
+      <route default></route>
+    </main>
+  </div>
+</single-spa-router>
